@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.devbaltasarq.nuhvar.view.MainActivity">
+    <item
+        android:id="@+id/action_record"
+        android:orderInCategory="100"
+        android:title="@string/lblRecord"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_stopwatch"/>
+    <item
+        android:id="@+id/action_results"
+        android:orderInCategory="101"
+        android:title="@string/lblResultViewer"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_graph"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="102"
+        android:title="@string/lblSettings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom" />
+</menu>

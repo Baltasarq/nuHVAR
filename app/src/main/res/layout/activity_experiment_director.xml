@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/lyRoot"
+    tools:context=".view.experiment.ExperimentDirector">
+
+    <include layout="@layout/content_experiment_director" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbLaunchNow"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/lblPerformEcg"
+        app:srcCompat="@drawable/ic_stopwatch"
+        android:backgroundTint="#ff0000"
+        android:layout_gravity="bottom|right|end" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbStop"
+        android:visibility="gone"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:contentDescription="@string/lblStop"
+        android:backgroundTint="#ff0000"
+        app:srcCompat="@drawable/ic_stop"
+        android:layout_gravity="bottom|right|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

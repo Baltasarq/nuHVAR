@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".view.experiment.ExperimentDirector"
+    tools:showIn="@layout/activity_experiment_director">
+
+    <LinearLayout       android:id="@+id/lyInfo"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_weight=".4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblDevice"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView   android:id="@+id/lblDeviceName"
+                android:layout_weight=".6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight=".4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblDevice"
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <TextView   android:id="@+id/lblConnectionStatus"
+                android:textColor="#ff0000"
+                android:layout_weight=".6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <TextView       android:id="@+id/msgStatus"
+            android:text="@string/msgWaitingForConnection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout       android:id="@+id/lyMaxTime"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:text="@string/msgMaxTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart=".5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/lblMinutes" />
+
+                <TextView       android:id="@+id/lblMaxTimeMins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:text="0'" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton    android:id="@+id/btSetMaxTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#00000000"
+            android:contentDescription="@string/msgMaxTime"
+            app:srcCompat="@drawable/ic_alarm_clock" />
+
+        <TextView
+            android:gravity="center"
+            android:text="@string/msgMaxTimeExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/cdInfo"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardUseCompatPadding="true"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp">
+
+        <ImageView      android:id="@+id/ivChartViewer"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:layout_width="match_parent"
+            android:layout_weight=".7"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:gravity="center_horizontal|center_vertical">
+
+            <include layout="@layout/content_hr_rr_support" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal">
+
+                <TextView    android:id="@+id/lblCrono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:text="00:00" />
+
+                <TextView   android:id="@+id/lblInstantBpm"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textSize="35sp"
+                    android:text="60ppm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

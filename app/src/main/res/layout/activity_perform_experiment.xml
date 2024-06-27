@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.PerformExperimentActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton android:id="@+id/btStartScan"
+                android:visibility="invisible"
+                android:padding="5sp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/lblStartScan"
+                android:background="#00000000"
+                app:srcCompat="@drawable/ic_scan" />
+
+
+            <ImageButton android:id="@+id/btStopScan"
+                android:visibility="invisible"
+                android:padding="5sp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/lblStopScan"
+                android:background="#00000000"
+                app:srcCompat="@drawable/ic_stop_scan" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblDevice"
+                android:labelFor="@id/lblChosenDevice"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/lblChosenDevice"
+                android:gravity="end"
+                android:textAlignment="textEnd"
+                android:layout_width="wrap_content"
+                android:layout_weight=".9"
+                android:layout_height="wrap_content"
+                android:padding="20dp" />
+
+            <ImageButton android:id="@+id/btTestHRDevice"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_ecg"
+                android:contentDescription="@string/lblTestDevice"
+                android:background="#00000000"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <ListView android:id="@+id/lvDevices"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbPerformExperiment"
+        android:contentDescription="@string/lblRecord"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:tint="#ffffff"
+        app:srcCompat="@drawable/ic_stopwatch"
+        android:layout_gravity="bottom|right|end" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

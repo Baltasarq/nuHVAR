@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">nuhVAR</string>
+
+    <!-- Labels -->
+    <string name="lblDelete">Delete</string>
+    <string name="lblSettings">Settings</string>
+    <string name="lblResult">Result</string>
+    <string name="lblResults">Results</string>
+    <string name="lblShare">Share</string>
+    <string name="lblNo">No</string>
+    <string name="lblCancel">Cancel</string>
+    <string name="lblDismiss">Dismiss</string>
+    <string name="lblStop">Stop</string>
+    <string name="lblImport">Importar</string>
+    <string name="lblRecord">Record</string>
+    <string name="lblNoEntries">No entries.</string>
+    <string name="lblSave">Save</string>
+    <string name="lblChart">Chart</string>
+    <string name="lblBack">Back</string>
+    <string name="lblReport">Report</string>
+    <string name="lblResultViewer">Result Viewer</string>
+    <string name="lblStartScan">Start scan</string>
+    <string name="lblStopScan">Stop scan</string>
+    <string name="lblEcg">ECG</string>
+    <string name="lblPerformEcg">Perform ECG</string>
+    <string name="lblDevice">Device</string>
+    <string name="lblTestDevice">Test device</string>
+    <string name="lblRefresh">Refresh</string>
+    <string name="lblDeviceFound">Device found</string>
+    <string name="lblActivateBluetooth">Activate bluetooth</string>
+    <string name="lblPermissionsNeeded">Permissions needed</string>
+    <string name="lblMinutes">Minutes</string>
+    <string name="lblSeconds">Seconds</string>
+    <string name="lblConnected">Connected</string>
+    <string name="lblDisconnected">Disconnected</string>
+    <string name="lblHRNotSupported">HR monitoring not supported</string>
+    <string name="lblRRNotSupported">RR monitoring not supported</string>
+    <string name="lblChartMinHR">Minimum bpm in chart</string>
+    <string name="lblChartMaxHR">Maximum bpm in chart</string>
+    <string name="lblBpm">bpm</string>
+    <string name="lblRR">rr</string>
+    <string name="lblZoomIn">Zoom in</string>
+    <string name="lblZoomOut">Zoom out</string>
+
+    <!-- Error messages -->
+    <string name="errIO">I/O Error</string>
+    <string name="errExport">Export Error</string>
+    <string name="errDeleting">Error deleting</string>
+    <string name="errUnknownDevice">Unknown device</string>
+    <string name="errNoBluetooth">Unable to activate bluetooth</string>
+    <string name="errNoBluetoothPermissions">No enough permissions to enable bluetooth</string>
+    <string name="errRecording">Error recording</string>
+    <string name="errIncorrectDuration">The duration is incorrect (too short)</string>
+
+    <!-- Messages -->
+    <string name="msgDefaultMaxTime">Default maximum time (mins.)</string>
+    <string name="msgMaxTime">Maximum Time</string>
+    <string name="msgMaxTimeExplanation">(a duration of 0 means indefinite time)</string>
+    <string name="msgAreYouSure">Are you sure?</string>
+    <string name="msgReportPermissionsNeeded">
+        This app needs Bluetooth connectivity, in order to achieve its objective of
+        measuring heart rate variability. You are going to be asked next for permissions
+        to enable, scan, and connect to health devices through Bluetooth LE.
+        Please grant these permissions to be able to use the whole functionality of the app;
+        otherwise, you will only be able to test the app through a demo device. </string>
+    <string name="msgExperimentFinished">Experiment finished</string>
+    <string name="msgUnableToSaveExperimentResult">Unable to save experiment result</string>
+    <string name="msgWaitingForConnection">Waiting for connection</string>
+    <string name="msgReadyToLaunch">Ready to launch</string>
+</resources>

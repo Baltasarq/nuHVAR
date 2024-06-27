@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    tools:context=".view.ResultsActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btImport"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:layout_weight=".9"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/lblImport"
+            android:backgroundTint="#505050"
+            app:srcCompat="@drawable/ic_import" />
+
+        <ProgressBar    android:id="@+id/pbIndeterminateResultUpload"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".9">
+
+        <TextView   android:id="@+id/lblNoEntries"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="@string/lblNoEntries"/>
+
+        <ListView   android:id="@+id/lvResultItems"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
